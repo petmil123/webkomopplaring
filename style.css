@@ -5,17 +5,29 @@ h1 {
     color: white;
 }
 
-p {
+p, a {
     color: white;
 }
 
 nav {
     background-color: #003f88;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-nav > section {
-    margin: 0.1rem
+nav > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > div > section {
+    margin: 0.1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+nav > div > section > img {
+    width: 10px;
 }
