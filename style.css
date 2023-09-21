@@ -1,0 +1,11 @@
+#body{
+    background-color: red;
+}
+
+#Navbar{
+    background-color: blue;
+}
+
+#Navbar > a{
+    color: white;
+}
