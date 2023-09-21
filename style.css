@@ -1,16 +1,12 @@
 body {
     margin: 0;
     display: grid;
-}
-h1 {
-    color: white;
-}
-
-p, a {
-    color: white;
+    gap: 50px;
 }
 
 nav {
+    grid-column: 1 / span 2;
+    grid-row: 1;
     background-color: #003f88;
     display: flex;
     justify-content: space-between;
@@ -23,10 +19,11 @@ nav > div {
     align-items: center;
 }
 
-nav > div > p a h1{
+nav > div > p, nav > div > a, nav > div > h1{
     margin: 0.1rem;
     margin-left: .5rem;
     margin-right: .5rem;
+    color: white;
 }
 
 nav > div > img {
@@ -34,5 +31,17 @@ nav > div > img {
 }
 
 article {
+    grid-row: 2;
     margin: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px grey;
+}
+
+article > h2 {
+    color: #003f88;
+}
+
+article > img {
+    width: 100%;
 }
