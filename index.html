@@ -3,9 +3,868 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
-<body>
+<body><div id="MathJax_Message" style="display: none;"></div>
     
+    <!-- Pop up window displaying important information about the 'fadderperiode' -->
+    
+
+    <div id="content">
+        <!-- Navigation -->
+        <header>
+            <nav class="navbar navbar-dark navbar-expand-lg nabla-navbar" role="navigation">
+            <a class="navbar-brand" href="/">
+                    
+                    <img width="125" src="/static/img/nabla_logo_white.svg" alt="Nabla">
+                    
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nabla-navbar-collapse-1" aria-controls="nabla-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse " id="nabla-navbar-collapse-1">
+                
+                
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mr-1 ">
+                        <a class="nav-link text-light" href="/arrangement/">Kalender</a>
+                    </li>
+                    <li class="nav-item mr-1 ">
+                        <a class="nav-link text-light" href="/stillinger/">Karriere</a>
+                    </li>
+                    <li class="nav-item mr-1 dropdown ">
+                        <a href="#ting" class="nav-link dropdown-toggle text-light" data-toggle="dropdown" id="navbarDropdown1" role="button" aria-haspopup="true" aria-expanded="false">
+                            Nablamedia
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            
+                            <a class="dropdown-item" href="/nabladet/">Nabladet</a>
+                            <a class="dropdown-item" href="/podcast/">Skråttcast</a>
+                            <a class="dropdown-item" href="/referater/2023">Styremøtereferater</a>
+                            <a class="dropdown-item" href="/album/">Bildealbum</a>
+                            <a class="dropdown-item" href="/spill/">Spill</a>
+                            <a class="dropdown-item" href="/nyheter/">Nyheter</a>
+                            <!-- <a class="dropdown-item" href="/blogg/">Blogg</a> -->
+                            <a class="dropdown-item" href="/joulekalender/2022/">Joulekalender 2022</a>
+
+                    </div></li><li class="nav-item mr-1 dropdown ">
+                        <a href="#ting" class="nav-link dropdown-toggle text-light" data-toggle="dropdown" id="navbarDropdown1" role="button" aria-haspopup="true" aria-expanded="false">
+                            Om Nabla
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            
+                            <a class="dropdown-item" href="/om-nabla/">Generelt om Nabla</a>
+                            <a class="dropdown-item" href="/komite/komiteer">Undergrupper</a>
+
+                            <a class="dropdown-item" href="/wiki/">NablaWiki</a>
+                            <a class="dropdown-item" href="/om/tillitsvalgte/">Tillitsvalgte</a>
+                            <a class="dropdown-item" href="/nystudent/">For nye studenter</a>
+
+                    </div></li><li class="nav-item mr-1 dropdown ">
+                        <a href="#Om" class="nav-link dropdown-toggle text-light" data-toggle="dropdown" id="navbarDropdown2" role="button" aria-haspopup="true" aria-expanded="false">
+                            Kontakt og varsling
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <a class="dropdown-item" href="/contact/">Kontakt oss</a>
+                            <a class="dropdown-item" href="/varsling/">Varsling</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-1 dropdown">
+                        <a href="#ting" class="nav-link dropdown-toggle text-light" data-toggle="dropdown" id="navbarDropdown5" role="button" aria-haspopup="true" aria-expanded="false">
+                            Diverse
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                            
+                            <a class="dropdown-item" href="/shop/">Nablashop</a>
+                            <a class="dropdown-item" href="http://bokskap.nabla.no/">Bokskap</a>
+                            <a class="dropdown-item" href="/utveksling/">Utveksling</a>
+                            <a class="dropdown-item" href="https://drive.google.com/drive/u/0/folders/0AIfT2N9gx5wOUk9PVA">Nablabanken</a>
+                            <a class="dropdown-item" href="/contact/rombooking/">Rombooking</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-1 ">
+                        <a class="nav-link text-light" href="/contact/for_bedrifter/">For bedrifter</a>
+                    </li>
+
+                    
+                    
+                    <!-- <li class="nav-item mr-1 "> -->
+                    <!--     <a class="nav-link text-light" href="/application/">Søk undergruppe</a> -->
+                    <!-- </li> -->
+                    
+
+                </ul>
+
+                
+
+
+
+                <ul class="nav navbar-nav ">
+                    
+                    <li class="nav-item mr-1 ">
+                        <a class="nav-link text-light" href="/search/">Søk</a>
+                    </li>
+                    
+
+                    <li class="nav-item mr-1 ">
+                        <a class="nav-link text-light" href="/brukere/registrer/">Registrer deg</a>
+                    </li>
+                    <li class="nav-item mr-1 dropdown">
+                        <a href="/login/?next=/" class="nav-link dropdown-toggle text-light" data-toggle="dropdown" id="navbarDropdown4" role="button" aria-haspopup="true" aria-expanded="false">
+                            Logg inn
+                        </a>
+                        <form class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown4" action="/login/" method="post">
+                            <input type="hidden" name="csrfmiddlewaretoken" value="TM5W9fTYLG4sdG5P9uVSFamRQVnf4d1OPv7ryuhUiFGzIPoEL55LdALwJWmi5hDo">
+                            <input type="hidden" name="next" value="/">
+                            <input class="form-control" style="min-width: 100%;" type="text" placeholder="Brukernavn" name="username">
+                            <input class="form-control" style="min-width: 100%;" type="password" placeholder="Passord" name="password">
+                            <button class="submit btn btn-nabla-blue-dark btn-block" type="submit">Logg inn</button>
+                        </form>
+                    </li>
+                
+                
+                    <li class="nav-item">
+                        <a class="navbar-brand " href="/english/">
+                            <img width="30" src="/static/img/GB_flag.svg" alt="Eng">
+                        </a>
+                    </li>
+                
+                </ul>
+                
+            </div>
+            <!-- /.navbar-collapse -->
+            </nav>
+
+        </header>
+        <!-- Hvis du ikke har med full-body vil ikke footer alltid være på bunnen -->
+        <div id="full-body">
+        <!-- Page Content -->
+
+        
+        <div class="container" id="mainContent">
+        
+
+
+
+        
+    
+    <div class="maingrid-container">
+        <!--main grid container open tag-->
+        <!--main content begin-->
+
+        
+        
+
+
+
+
+
+<div class="card main-article">
+    <img alt="" class="card-img-top" src="/media/thumbnails/uploads/news_pictures/innut2.jpg.770x300_q95_box-0%2C584%2C1244%2C1069_detail_upscale.jpg">
+    <div class="card-body card-body-overline">
+        <h5 class="h1 card-title">
+        <a href="/arrangement/1723-innut" class="text-nabla stretched-link">
+            
+                INN/UT
+            
+        </a>
+    </h5>
+    <p class="card-text">wopwop</p>
+
+</div>
+
+</div>
+
+
+        
+        <div class="social card card-body card-body-overline">
+            <a href="mailto:bedriftskontakt@nabla.no" class="btn btn-nabla-blue-dark">
+                Bedriftsforslag - send en mail til BN
+            </a>
+            <p></p>
+            <a href="/contact/gullkorn/" class="btn btn-nabla-blue-dark">
+                Lyst til å melde inn et gullkorn eller sitat?
+            </a>
+            <p></p>
+            
+
+        </div>
+
+        
+        
+
+<div class=" d-flex flex-column  upcoming-events-1">
+    <h5 class="nabla-frontpage-header">
+        
+            <a class="nabla-frontpage-header" href="/arrangement/?type=event">Arrangementer</a>
+        
+    </h5>
+    <div class="card flex-grow-1 border border-nabla-blue mb-0">
+        
+            <img alt="" class="card-img-top" src="/media/thumbnails/uploads/news_pictures/innut2.jpg.770x300_q95_box-0%2C584%2C1244%2C1069_detail_upscale.jpg">
+            <div class="card-body flex-grow-1 list-group-item-action" style="position: relative; padding-bottom: .75rem;">
+                <h5 class="card-title">
+                    <a class="text-nabla-blue stretched-link" href="/arrangement/1723-innut">
+                        INN/UT
+                    </a>
+                </h5>
+                <p class="card-text mb-2">wopwop</p>
+                <div class="float-right">
+                    
+                    
+                    
+                    <time class="text-nowrap text-nabla-blue pl-1" datetime="2023-09-22T18:00:00">
+                        fre 22.09
+                    </time>
+                </div>
+            </div>
+        
+        <div class="list-group list-group-flush border-top">
+            
+                
+                
+            
+                
+                    <a class="list-group-item list-group-item-action d-flex align-items-center " href="/arrangement/1707-ekskursjon-kull21">
+                        <span class="text-dark text-decoration-none flex-1 text-truncate mr-auto">
+                            3. klasse ekskursjon, Trieste og Pisa
+                        </span>
+                        <div class="text-nowrap">
+                            
+                            <time class="text-nowrap text-nabla-blue pl-1" datetime="2024-03-17T00:00:00">
+                                søn 17.03
+                            </time>
+                        </div>
+                    </a>
+                
+            
+        </div>
+    </div>
+</div>
+        
+
+<div class=" d-flex flex-column  upcoming-events-2">
+    <h5 class="nabla-frontpage-header">
+        
+            <a class="nabla-frontpage-header" href="/arrangement/?type=bedpres">Bedriftspresentasjoner</a>
+        
+    </h5>
+    <div class="card flex-grow-1 border border-nabla-blue mb-0">
+        
+            <img alt="" class="card-img-top" src="/media/thumbnails/news_pictures/sinteflogo_1.png.770x300_q95_box-260%2C380%2C5960%2C2601_detail_upscale.jpg">
+            <div class="card-body flex-grow-1 list-group-item-action" style="position: relative; padding-bottom: .75rem;">
+                <h5 class="card-title">
+                    <a class="text-nabla-blue stretched-link" href="/arrangement/1660-sintef-digital">
+                        SINTEF Digital
+                    </a>
+                </h5>
+                <p class="card-text mb-2">SINTEF inviterer til Bedriftspresentasjon i Hovedbygget, rom H3, med Pizza-Bespisning senere på Gløshaugen i Hangaren. Send melding til olavih@ntnu.no for allergier.</p>
+                <div class="float-right">
+                    
+                    
+                    
+                    <time class="text-nowrap text-nabla-blue pl-1" datetime="2023-09-21T17:00:00">
+                        tor 21.09
+                    </time>
+                </div>
+            </div>
+        
+        <div class="list-group list-group-flush border-top">
+            
+                
+                
+            
+                
+                    <a class="list-group-item list-group-item-action d-flex align-items-center " href="/arrangement/1710-workshop-med-bekk">
+                        <span class="text-dark text-decoration-none flex-1 text-truncate mr-auto">
+                            Introduksjon til data og analyse med Bekk!&nbsp;🤖
+                        </span>
+                        <div class="text-nowrap">
+                            
+                            <time class="text-nowrap text-nabla-blue pl-1" datetime="2023-09-27T16:15:00">
+                                ons 27.09
+                            </time>
+                        </div>
+                    </a>
+                
+            
+                
+                    <a class="list-group-item list-group-item-action d-flex align-items-center " href="/arrangement/1721-accenture">
+                        <span class="text-dark text-decoration-none flex-1 text-truncate mr-auto">
+                            Accenture
+                        </span>
+                        <div class="text-nowrap">
+                            
+                            <time class="text-nowrap text-nabla-blue pl-1" datetime="2023-09-28T18:00:00">
+                                tor 28.09
+                            </time>
+                        </div>
+                    </a>
+                
+            
+                
+                    <a class="list-group-item list-group-item-action d-flex align-items-center " href="/arrangement/1722-Bedriftspresentasjon-med-SINTEF-Energi">
+                        <span class="text-dark text-decoration-none flex-1 text-truncate mr-auto">
+                            SINTEF Energi
+                        </span>
+                        <div class="text-nowrap">
+                            
+                            <time class="text-nowrap text-nabla-blue pl-1" datetime="2023-10-02T17:15:00">
+                                man 02.10
+                            </time>
+                        </div>
+                    </a>
+                
+            
+                
+                    <a class="list-group-item list-group-item-action d-flex align-items-center " href="/arrangement/1714-simula">
+                        <span class="text-dark text-decoration-none flex-1 text-truncate mr-auto">
+                            Simula
+                        </span>
+                        <div class="text-nowrap">
+                            
+                            <time class="text-nowrap text-nabla-blue pl-1" datetime="2023-11-02T17:00:00">
+                                tor 02.11
+                            </time>
+                        </div>
+                    </a>
+                
+            
+        </div>
+    </div>
+</div>
+
+        <!--Kontoret-->
+        <div class="office d-flex flex-column">
+            <h5 class="nabla-frontpage-header">
+                Kontoret den neste uka
+            </h5>
+            
+
+
+
+    
+
+    <div class="card border border-nabla-blue flex-grow-1 card-body-overline " style="word-wrap: normal">
+        <table id="office_calendar">
+            <colgroup><col width="20%">
+            <col width="55%">
+            <col width="25%">
+            
+                
+                    </colgroup><tbody><tr>
+                        <th colspan="2">Torsdag</th>
+                        <th colspan="1">Varighet</th>
+                    </tr>
+                
+
+                
+                    <tr class="event">
+                
+            <td> 10:00 </td>
+            <td> ITV </td>
+            <td> 1 time </td>
+            </tr>
+            
+                
+
+                
+                    <tr class="event">
+                
+            <td> 18:15 </td>
+            <td> Webkom </td>
+            <td> 4 timer </td>
+            </tr>
+            
+                
+                    <tr>
+                        <th colspan="2">Fredag</th>
+                        <th colspan="1">Varighet</th>
+                    </tr>
+                
+
+                
+                    <tr class="event">
+                
+            <td> 10:30 </td>
+            <td> Åpent kontor </td>
+            <td> 30 min </td>
+            </tr>
+            
+                
+
+                
+                    <tr class="event">
+                
+            <td> 12:00 </td>
+            <td> Åpent kontor </td>
+            <td> 2 timer </td>
+            </tr>
+            
+                
+
+                
+                    <tr class="event">
+                
+            <td> 16:00 </td>
+            <td> Åpent kontor </td>
+            <td> 30 min </td>
+            </tr>
+            
+                
+                    <tr>
+                        <th colspan="2">Mandag</th>
+                        <th colspan="1">Varighet</th>
+                    </tr>
+                
+
+                
+                    <tr title="Åpen kontortid for den komiteen som har kontoruke (og vaskeuke den uken!) oversikt over hvilken komite dette er, henger på kontoret." class="event has_description">
+                        
+            <td> 13:00 </td>
+            <td> Komité-kontortid </td>
+            <td> 30 min </td>
+            </tr>
+            
+                
+                    <tr>
+                        <th colspan="2">Tirsdag</th>
+                        <th colspan="1">Varighet</th>
+                    </tr>
+                
+
+                
+                    <tr title="Hver uke har styret i Nabla møte for å diskutere driften av Nabla. Disse møtene er åpen for alle komponenter i Nabla. Om du vil komme innom på et av møtene våre, ta kontakt med et av styremedlemmene, eller hele styret: nabla@nabla.no!" class="event has_description">
+                        
+            <td> 18:00 </td>
+            <td> Styremøte (ikke på kontoret) </td>
+            <td> 2 timer </td>
+            </tr>
+            
+                
+                    <tr>
+                        <th colspan="2">Onsdag</th>
+                        <th colspan="1">Varighet</th>
+                    </tr>
+                
+
+                
+                    <tr title="Det blir vafler på minst en styrekontortid i uka - enten onsdag eller fredag! Kom innom for en prat, eller om du vil ta opp noe spesielt med styret!" class="event has_description">
+                        
+            <td> 11:00 </td>
+            <td> Styrekontortid </td>
+            <td> 1 time </td>
+            </tr>
+            
+        </tbody></table>
+    </div>
+
+
+
+        </div>
+
+        <div class="latest-nablad d-flex flex-column">
+            <h5 class="nabla-frontpage-header">
+                Siste Nablad
+            </h5>
+            <div class="flex-grow-1 card card-body card-body-overline">
+                <!--Siste Nablad-->
+                
+                    <div class="text-center">
+                        
+                        <div class="row text-center">
+
+                            
+                            
+                                <div class="col-md-12">
+                                    <a href="/nabladet/1018/nabladet-mai-2023/">
+                                        <img class="rounded mw-100 nabla-media-img" src="/media/thumbnails/nabladet/mai_censored.pdf.jpg.300x770_q95_detail_upscale.jpg">
+                                    </a>
+                                </div>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+
+
+        <!--Sidebar begin-->
+        
+            <div class="welcome card card-body card-body-overline ">
+                <h1 class="text-nabla-blue">Velkommen til Nabla</h1>
+                <p>
+                    Nabla er linjeforeningen for studenter ved sivilingeniørstudiet Fysikk og Matematikk ved NTNU, og
+                    har
+                    som formål å være en sosial arena, i tillegg til å fremme studentenes faglige interesser. Gjennom
+                    året
+                    arrangerer Nabla et mangfold av ulike arrangementer, og har 25 ulike undergrupper som studentene kan
+                    engasjere seg i.
+                </p>
+                <h4 class="text-nabla-blue">Ny student?</h4>
+                <p>
+                    Følg oss på <a href="https://www.instagram.com/nablalinjeforening/">instagram</a> da vel!<br>
+                    Les vår informasjon for nye studenter <a href="/nystudent/">her</a>.
+                </p>
+                <h4 class="text-nabla-blue">Bedrift?</h4>
+                <p>
+                    Sjekk ut <a href="/bedriftskontakten/">bedriftskontakten sine sider</a>, eller ta kontakt med
+                    bedriftskontakten på <a href="mailto:bedkom@nabla.no">bedkom@nabla.no</a>.
+                </p>
+            </div>
+        
+        <div class="poll d-flex flex-column ">
+            <!--Poll-->
+            
+
+
+
+
+
+
+<h5 class="nabla-frontpage-header">
+    Siste forsideavstemning
+</h5>
+<div class="flex-grow-1 card card-body card-body-overline">
+    
+        <h4>Hva er det beste faget første semester?</h4>
+        
+            <form action="/poll/168/vote/" method="post">
+    <input type="hidden" name="csrfmiddlewaretoken" value="TM5W9fTYLG4sdG5P9uVSFamRQVnf4d1OPv7ryuhUiFGzIPoEL55LdALwJWmi5hDo">
+    <input type="hidden" name="next" value="/#168">
+    
+    
+    
+        <div class="radio">
+            <label>
+                <input type="radio" name="choice" value="689">
+                <span class="choice">Exphil</span>
+            </label>
+        </div>
+    
+        <div class="radio">
+            <label>
+                <input type="radio" name="choice" value="687">
+                <span class="choice">Mekanisk Fysikk</span>
+            </label>
+        </div>
+    
+        <div class="radio">
+            <label>
+                <input type="radio" name="choice" value="688">
+                <span class="choice">Informasjonsteknologi Grunkkurs</span>
+            </label>
+        </div>
+    
+        <div class="radio">
+            <label>
+                <input type="radio" name="choice" value="686">
+                <span class="choice">Matematikk 1</span>
+            </label>
+        </div>
+    
+    
+    
+        <div class="center" style="color:#999;">Logg inn for å stemme</div>
+    
+</form>
+
+        
+    
+</div>
+
+        </div>
+
+
+        <div class="latest-podcast d-flex flex-column">
+            <h5 class="nabla-frontpage-header">
+                Siste Skråttcast
+            </h5>
+            <div class="card card-body card-body-overline">
+                <!--Siste Skråttcast-->
+                
+                    <div class="d-flex flex-column text-center">
+                        
+                        <a href="/podcast/334/">
+                            <img class="rounded mw-100 nabla-media-img" src="/media/news_pictures/377864338_680299437465254_4883515152375090922_n.jpg" alt="Sending 3 - Hot sauce, hot tea and hot spy">
+                        </a>
+                    </div>
+                
+            </div>
+        </div>
+
+        <!-- Front page news -->
+        
+            
+
+
+
+
+
+<div class="card news more-news-1">
+    <img alt="" class="card-img-top" src="/media/thumbnails/uploads/news_pictures/DSCF9095.JPG.770x300_q95_box-0%2C856%2C6113%2C3237_detail_upscale.jpg">
+    <div class="card-body card-body-overline">
+        <h5 class="h5 card-title">
+        <a href="/arrangement/1698-immatrikuleringsball-2023" class="text-nabla stretched-link">
+            
+                Immatrikuleringsball 2023
+            
+        </a>
+    </h5>
+    <p class="card-text">Finn frem finstasen, 6. september arrangeres Nablas ærverdige immatrikuleringsball!</p>
+
+</div>
+
+</div>
+
+        
+            
+
+
+
+
+
+<div class="card news more-news-2">
+    <img alt="" class="card-img-top" src="/media/thumbnails/uploads/news_pictures/fadderukekalender-riktig.jpg.770x300_q95_box-0%2C0%2C3508%2C1366_detail_upscale.jpg">
+    <div class="card-body card-body-overline">
+        <h5 class="h5 card-title">
+        <a href="/arrangement/1705-Fadderperioden-2023" class="text-nabla stretched-link">
+            
+                Fadderperioden 2023
+            
+        </a>
+    </h5>
+    <p class="card-text">Ny student? Meld deg på!</p>
+
+</div>
+
+</div>
+
+        
+            
+
+
+
+
+
+<div class="card news more-news-3">
+    <img alt="" class="card-img-top" src="/media/thumbnails/uploads/news_pictures/IMG_20230301_094556.jpg.770x300_q95_box-0%2C681%2C3648%2C2102_detail_upscale.jpg">
+    <div class="card-body card-body-overline">
+        <h5 class="h5 card-title">
+        <a href="/arrangement/1702-gymtimen" class="text-nabla stretched-link">
+            
+                Utegymtimen
+            
+        </a>
+    </h5>
+    <p class="card-text">Lei av å sitte på sal og se finværet utenfor? Vi også! Sportskom inviterer derfor til UteGymtimen.</p>
+
+</div>
+
+</div>
+
+        
+            
+
+
+
+
+
+<div class="card news more-news-4">
+    <img alt="" class="card-img-top" src="/media/thumbnails/uploads/news_pictures/Maxwells17.png.770x300_q95_box-0%2C504%2C2560%2C1502_detail_upscale.jpg">
+    <div class="card-body card-body-overline">
+        <h5 class="h5 card-title">
+        <a href="/arrangement/1694-oving-17-mai-mmm" class="text-nabla stretched-link">
+            
+                Øving før 17.mai med Maxwells
+            
+        </a>
+    </h5>
+    <p class="card-text">Vil du være med å spille med Maxwells i 17. mai-toget?</p>
+
+</div>
+
+</div>
+
+        
+            
+
+
+
+
+
+<div class="card news more-news-5">
+    <img alt="" class="card-img-top" src="/media/thumbnails/uploads/news_pictures/fetchimage.jpeg.770x300_q95_box-0%2C90%2C681%2C355_detail_upscale.jpg">
+    <div class="card-body card-body-overline">
+        <h5 class="h5 card-title">
+        <a href="/arrangement/1691-educom-integration-bee" class="text-nabla stretched-link">
+            
+                Educom Integration bee
+            
+        </a>
+    </h5>
+    <p class="card-text">På tide å terpe på substitusjon og delbrøksoppspalting, for Eduom arrangerer Integration bee torsdag 27. april kl. 17! Meld dere på og møt opp i EL5 (Gamle elektro).</p>
+
+</div>
+
+</div>
+
+        
+            
+
+
+
+
+
+<div class="card news more-news-6">
+    <img alt="" class="card-img-top" src="/media/thumbnails/uploads/news_pictures/forsidenyhet_LwP5BN0.png.770x300_q95_box-0%2C0%2C770%2C300_detail_upscale.jpg">
+    <div class="card-body card-body-overline">
+        <h5 class="h5 card-title">
+        <a href="/arrangement/1686-lunsjquiz" class="text-nabla stretched-link">
+            
+                Lunsjquiz!
+            
+        </a>
+    </h5>
+    <p class="card-text">Møt opp i R9 onsdag 26. april kl12 for en velfortjent pause fra lesingen.</p>
+
+</div>
+
+</div>
+
+        
+
+        <button onclick="location.href='/nyheter/'" type="button" class="more-news-btn btn btn-nabla-blue btn-block">Flere nyheter
+        </button>
+
+        <div class="sponsors card card-body card-body-overline justify-content-center">
+            <!--Sponsorer-->
+            
+                <p>
+                    </p><div>
+    <a href="http://www.tekna.no/"><img src="/media/uploads/content/tekna-alt-logo.jpg" alt="Tekna" style="max-width: 40%; margin-right: 10%"></a>
+
+    <a href="https://www.sit.no/"><img src="/media/uploads/content/SiT_logo_farge.png" alt="SiT" style="max-width: 40%;"></a>
+</div>
+                <p></p>
+            
+        </div>
+        <div class="suggestions card card-body card-body-overline">
+            <!--Send inn ellernoe?-->
+            
+                <p>
+                    </p><p><a href="/utleie/">
+<img class="w-100" src="/media/uploads/content/pixel_utleie_v2.png" id="utleie-ad"> 
+</a></p>
+<p><span style="padding: 12px 6px; background: #7b7b7b; color: white; font-family: ubuntu, sans-serif; font-size: 20px; /*box-shadow: 1px 6px 10px -3px black*/; text-align: center; width: 100%; display: inline-block; border-radius: 5px;">
+Kompendie? Kjøp på Nablakontoret!
+</span></p>
+                <p></p>
+            
+        </div>
+        <!--sidebar end-->
+
+    </div><!--main grid container close tag-->
+
+
+        </div> <!-- id="mainContent" -->
+        
+
+        </div>
+        <!-- Footer -->
+        <footer class="nabla-footer darkmode-ignore">
+
+            <div class="container">
+            <div class="row pb-4">
+
+                
+
+                
+
+                
+                <div class="col-lg-3 ">
+                <h2>Informasjon</h2>
+
+
+                <p>
+                Organisasjonsnr.: <span class="float-right">992168544</span><br>
+                Hovedkonto: <span class="float-right">1503.13.57338</span><br>
+                Bedriftskontakten-konto: <span class="float-right">1503.13.57311</span><br>
+                Arrkomkonto: <span class="float-right">1503.13.57400</span><br>
+                ProKom-konto: <span class="float-right">1503.13.57338</span><br>
+                Gravitoneskonto: <span class="float-right">1503.65.97965</span><br>
+                </p>
+
+
+                </div>
+                 <div class="col-lg-3 text-center ">
+                    <h2>Kontakt</h2>
+
+                        <p> <a href="/contact/">Kontaktside</a> <br>
+                        Linjeforeningen Nabla <br>
+                        Kjemiblokk 2, Realfagsbygget <br>
+                        Sæm Sælands vei 10, NTNU <br>
+                        7034 Trondheim <br>
+                        Norway
+                    </p>
+                </div>
+
+                <div class="col-lg-3 ">
+
+                <h2>Tilbakemelding</h2>
+                    <p>
+                    Har du funnet en feil, får du ikke logget på, eller er det noe som burde forbedres? <br>
+                    Fyll ut <a href="/contact/feedback/">tilbakemeldingskjema</a> eller kontakt webkom:<br>
+                    <a class="email" href="mailto:webkom@nabla.no">webkom@nabla.no</a>
+                    </p>
+                </div>
+
+                
+
+                
+                <div class="col-lg-3 center text-nowrap">
+                    <img src="/static/img/nabla-white.svg" alt="nabla logo">
+                    <br>
+                    <br>
+                    <a href="https://www.facebook.com/nablantnu/" class="fab fa-facebook-f fa-2x social-icon"></a>
+                    <a href="https://www.youtube.com/user/LinjeforeningenNabla" class="fab fa-youtube fa-2x social-icon"></a>
+                    <a href="https://www.instagram.com/nablalinjeforening/" class="fab fa-instagram fa-2x social-icon"></a>
+                    <a href="https://nablantnu.slack.com/" class="fab fa-slack fa-2x social-icon"></a>
+                    <a href="https://github.com/Nabla-NTNU/nablaweb" class="fab fa-github fa-2x social-icon"></a>
+                    <a href="https://nabla.no/media/uploads/content/snapcode.png" class="fab fa-snapchat fa-2x social-icon"></a>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <!-- /.container -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    
+
+    
+    
+    
+                
+        <script type="text/javascript" src="/static/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="/static/js/base.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async=""></script>
+        <script type="text/x-mathjax-config;executed=true">
+            MathJax.Hub.Config({
+              tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+            });
+        </script>
+
+        
+
+
+
+
+
+
 </body>
 </html>
