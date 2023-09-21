@@ -1,3 +1,21 @@
+body {
+    margin: 0;
+}
 h1 {
-    color: red;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+nav {
+    background-color: #003f88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > section {
+    margin: 0.1rem
 }
