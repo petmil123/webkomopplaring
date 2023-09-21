@@ -1,11 +1,50 @@
-#body{
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    margin: 0;
     background-color: red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto, auto;
+    grid-template-areas: "N N" "n w";
+    
+}
+
+div{
+    background-color: green;
+    margin: 10px;
+}
+
+#nextEvent{
+    grid-area: n;
+}
+
+#welcomeToNabla{
+    grid-area: w;
 }
 
 #Navbar{
     background-color: blue;
+    width: 100%;
+    margin: 0;
+    grid-area: N;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #Navbar > a{
     color: white;
+    flex-grow: 1;
+}
+
+#Navbar > img {
+    width: 200px;
+    margin: 10px;
 }
