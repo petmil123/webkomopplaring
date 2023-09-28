@@ -67,10 +67,9 @@ div{
 
 #Siste_skråttcast{
     grid-area: ss;
-    width: 100px;
 }
 
 #gigaBilde{
-    width: 100px;
-    height: 100px;
+    max-width: 100%;
+    max-height: 100%;
 }
