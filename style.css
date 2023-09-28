@@ -10,7 +10,7 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-columns: auto, auto, auto, auto;
-    grid-template-areas: "N N N N N" ". n n w ." ". arr bp K ." ". sn sn ss .";
+    grid-template-areas: "N N N N N" ". n n w ." ". arr bp K ." ". sn ss as ." ". iu ib rk ." ". fp sjm edu .";
     
 }
 
@@ -80,4 +80,40 @@ div > img{
 #gigaBilde{
     max-width: 100%;
     height: 100%;
+}
+
+#Avstemning {
+    grid-area: as;
+}
+
+#InnUt{
+    grid-area: iu;
+}
+
+#Immatrikuleringsball{
+    grid-area: ib;
+}
+
+#random_knapp{
+    grid-area: rk;
+}
+
+#Fadderperioden{
+    grid-area: fp;
+}
+
+#sausjandeMai{
+    grid-area: sjm;
+}
+
+#Educom {
+    grid-area: edu;
+}
+
+#lunsjquiz{
+    grid-area: lq;
+}
+
+#random_knapp{
+    grid-area: rk;
 }
