@@ -1,6 +1,25 @@
-div {
+body {
+    background-color: #c6d7ee;
+}
+#Meny_oversikt {
     background-color: #083c8c; 
     color: white;
+}
+
+#Velkommen_til_Nabla {
+    background-color: white;
+
+    color: black;
+
+    border-style: solid;
+    border-color: rgb(214, 214, 214);
+    border-radius: 2%;
+
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 4%;
+
 }
 h1 {
     color: white;
@@ -8,16 +27,16 @@ h1 {
 }
 
 h2 {
-    color: white;
+    color: #083c8c;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h3 {
-    color: white;
+    color: #083c8c;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 p {
-    color: white;
+    color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
