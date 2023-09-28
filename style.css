@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    width: 100%;
+    max-width: 100%;
     margin: 0;
     background-color: red;
     display: grid;
@@ -17,6 +17,12 @@ body{
 div{
     background-color: green;
     margin: 10px;
+    padding: 10px;
+}
+
+div > img{
+    width: 95%;
+    align-self: center;
 }
 
 #nextEvent{
@@ -71,5 +77,5 @@ div{
 
 #gigaBilde{
     max-width: 100%;
-    max-height: 100%;
+    height: 100%;
 }
