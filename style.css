@@ -21,8 +21,10 @@ div{
 }
 
 div > img{
-    width: 95%;
-    align-self: center;
+    display:block;
+    margin-left: -10px;
+    margin-top: -10px;
+    width: calc(100% + 20px);
 }
 
 #nextEvent{
