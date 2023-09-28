@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webkom er kult</title>
     <link rel="icon" type="image/png" href="data:image/png;base64,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">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
     <div id="navbar">
         <div id="meny_elementer">
-
-            <h1>Nabla</h1>
             <ul>
-            <li>
-                Kalender
-            </li>
-            <li>
-                Karriere
-            </li>
-            <li>
-                Nablamedia
-            </li>
-            <li>
-                Om Nabla
-            </li>
-            <li>
-                Kontakt og varsling
-            </li>
-            <li>
-                Diverse
-            </li>
-            <li>
-                For bedrifter            
-            </li>
-        </ul>
+                <li>
+                    <h1>Nabla</h1>
+                </li>
+                <li>
+                    Kalender
+                </li>
+                <li>
+                    Karriere
+                </li>
+                <li>
+                    Nablamedia
+                </li>
+                <li>
+                    Om Nabla
+                </li>
+                <li>
+                    Kontakt og varsling
+                </li>
+                <li>
+                    Diverse
+                </li>
+                <li>
+                    For bedrifter            
+                </li>
+                <li style="float:right;">
+                    Søk
+                </li>
+                <li style="float:right;">
+                    Registrer deg
+                </li>
+                <li style="float:right;">
+                    Logg inn
+                </li>
+                <li style="float:right;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg" alt="Flag of the United Kingdom" width="40" height="20">
+                </li>
+            </ul>
+        </div>
     </div>
-    <div id="meny_innlogging">
-        Søk
-        Registrer deg
-        Logg inn
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg" alt="Flag of the United Kingdom" width="40" height="20">
-    </div>
+
     <div id="Velkommen_til_Nabla">
         <h2>Velkommen til Nabla</h2>
         <p>Nabla er linjeforeningen for studenter ved sivilingeniørstudiet Fysikk og Matematikk ved NTNU, og har som formål å være en sosial arena, i tillegg til å fremme studentenes faglige interesser. Gjennom året arrangerer Nabla et mangfold av ulike arrangementer, og har 25 ulike undergrupper som studentene kan engasjere seg i.
@@ -54,15 +63,13 @@
        <p> Sjekk ut <a href="https://nabla.no/bedriftskontakten/">bedriftskontakten sine sider</a>, eller ta kontakt med bedriftskontakten på bedkom@nabla.no.
         </p>
     </div>
+
     <div id="Inn/ut arrangement">
         <img src="https://nabla.no/media/thumbnails/uploads/news_pictures/innut2.jpg.770x300_q95_box-0%2C584%2C1244%2C1069_detail_upscale.jpg" alt="Nabla kjelleren">
         <h2><a href="https://nabla.no/arrangement/1723-innut">INN/UT</a></h2>
         <b>wopwop</b>
         <p>Det blir INN/UT-fest på Kjellern nå på fredag!! Dette er en fest for dere som er tatt opp i en undergruppe eller går ut av en udnergruppe. Dere vil få info av gruppelederen deres. Meld dere på her.</p>
     </div>
-    
-    <div>
-        Oskar er best!
-    </div>
+
 </body>
 </html>

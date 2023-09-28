@@ -1,9 +1,15 @@
 body {
     background-color: #c6d7ee;
 }
-#Meny_oversikt {
+#navbar {
     background-color: #083c8c; 
     color: white;
+    display: flex;
+    width: 100%;
+}
+
+#navbar li {
+    display: inline;
 }
 
 #Velkommen_til_Nabla {
