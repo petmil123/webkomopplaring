@@ -14,6 +14,7 @@ body {
 
 #mid_section {
     display: flex;
+    flex-direction: row;
 }
 
 #strikk_og_drikk {
@@ -24,10 +25,12 @@ body {
 #strikk_og_drikk_info {
     background-color: white;
     padding: 3%;
+    width: 50%;
 }
 
 #Velkommen_til_Nabla {
     background-color: white;
+    width: 20%;
 
     color: black;
 
