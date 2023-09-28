@@ -27,6 +27,8 @@ div > img{
     width: calc(100% + 20px);
 }
 
+
+
 #nextEvent{
     grid-area: n;
 }
@@ -78,7 +80,11 @@ div > img{
 }
 
 #gigaBilde{
-    max-width: 100%;
+    height: 100%;
+    margin: -10;
+}
+
+#Siste_Nabladet > img{
     height: 100%;
 }
 
@@ -116,4 +122,13 @@ div > img{
 
 #random_knapp{
     grid-area: rk;
+}
+
+button{
+    width: 90%;
+    display: block;
+    margin-left: 5%;
+    background-color: blue;
+    margin-top: 10px;
+    height: 42px;
 }
