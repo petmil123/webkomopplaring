@@ -1,9 +1,23 @@
 body {
     background-color: #c6d7ee;
 }
-#Meny_oversikt {
+#navbar {
     background-color: #083c8c; 
     color: white;
+}
+
+#mid_section {
+    display: flex;
+}
+
+#strikk_og_drikk {
+    font-size: xx-large;
+
+    
+}
+#strikk_og_drikk_info {
+    background-color: white;
+    padding: 3%;
 }
 
 #Velkommen_til_Nabla {
