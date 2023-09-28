@@ -8,9 +8,9 @@ body{
     margin: 0;
     background-color: red;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-columns: auto, auto;
-    grid-template-areas: "N N" "n w";
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: auto, auto, auto, auto;
+    grid-template-areas: "N N N N N" ". n n w ." ". arr bp K ." ". sn sn sn .";
     
 }
 
@@ -47,4 +47,20 @@ div{
 #Navbar > img {
     width: 200px;
     margin: 10px;
+}
+
+#KontoretDenNesteVeka {
+    grid-area: K;
+}
+
+#NesteNabladet{
+    grid-area: sn;
+}
+
+#bedriftspresentasjoner {
+    grid-area: bp;
+}
+
+#Arrangementer {
+    grid-area: arr;
 }
