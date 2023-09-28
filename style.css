@@ -1,11 +1,16 @@
 body {
     background-color: #c6d7ee;
 }
-#navbar {
-    background-color: #083c8c; 
+
+#navbar{
+    background-color: #083c8c;
     color: white;
-    display: flex;
     width: 100%;
+    margin: 0;
+    grid-area: N;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #navbar li {
