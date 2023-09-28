@@ -46,14 +46,14 @@ article > img {
     width: 100%;
 }
 
-article > ul {
+.blaa-liste {
     color: white;
     list-style-type: none;
     padding-left: 0;
     margin: .3rem;
 }
 
-article > ul > li {
+.blaa-liste > li {
     margin: .3rem;
     padding: .3rem;
     background-color: #003f88;
