@@ -8,9 +8,9 @@ body{
     margin: 0;
     background-color: red;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-columns: auto, auto;
-    grid-template-areas: "N N" "n w";
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: auto, auto, auto, auto;
+    grid-template-areas: "N N N N N" ". n n w ." ". arr bp K ." ". sn sn ss .";
     
 }
 
@@ -47,4 +47,30 @@ div{
 #Navbar > img {
     width: 200px;
     margin: 10px;
+}
+
+#Kontoret_den_neste_uka {
+    grid-area: K;
+}
+
+#Siste_Nabladet{
+    grid-area: sn;
+}
+
+#bedriftpresentasjoner {
+    grid-area: bp;
+}
+
+#Arrangementer {
+    grid-area: arr;
+}
+
+#Siste_skråttcast{
+    grid-area: ss;
+    width: 100px;
+}
+
+#gigaBilde{
+    width: 100px;
+    height: 100px;
 }
